@@ -27,4 +27,4 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
     - name: Run Once
-      run: cargo run --verbose
+      run: cargo run
