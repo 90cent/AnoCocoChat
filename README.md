@@ -1,6 +1,7 @@
 # CocoChat
 EndToEnd Anonymus chatting app. With Rust Backend and Android support. +Webapp
 
+[![Rust](https://github.com/GEGAKE/CocoChat/actions/workflows/rust.yml/badge.svg)](https://github.com/GEGAKE/CocoChat/actions/workflows/rust.yml)
 
 
 Roadmap:
