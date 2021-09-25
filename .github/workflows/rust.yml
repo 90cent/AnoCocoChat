@@ -16,8 +16,9 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: Change Directory
-      run: cd Backend/rust_cocochat/
+      with:
+        repository: 'GEGAKE/CocoChat'
+        path: 'Backend/rust_cocochat/'
     - name: Build
       run: cargo build --verbose
     - name: Run tests
