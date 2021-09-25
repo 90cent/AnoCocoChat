@@ -19,7 +19,7 @@ jobs:
       with:
         repository: 'GEGAKE/CocoChat'
     - name: Check path
-      run: cd Backend/ && ls
+      run: '%cd Backend/ && pwd'
     - name: Build
       run: cargo build --verbose
     - name: Run tests
