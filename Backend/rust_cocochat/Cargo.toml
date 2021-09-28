@@ -2,10 +2,9 @@
 name = "rust_cocochat"
 version = "0.1.0"
 edition = "2018"
-author = "GEGAKE"
+authors = ["GEGAKE"]
 repository = "https://github.com/GEGAKE/CocoChat"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tor-stream="*"
