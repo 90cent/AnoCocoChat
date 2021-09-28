@@ -1,1 +1,1 @@
-D:\Weiteres\CocoChat\Backend\rust_cocochat\target\debug\rust_cocochat.exe: D:\Weiteres\CocoChat\Backend\rust_cocochat\src\log.rs D:\Weiteres\CocoChat\Backend\rust_cocochat\src\main.rs
+/home/gegake/coding/CocoChat/Backend/rust_cocochat/target/debug/rust_cocochat: /home/gegake/coding/CocoChat/Backend/rust_cocochat/src/log/helper.rs /home/gegake/coding/CocoChat/Backend/rust_cocochat/src/log.rs /home/gegake/coding/CocoChat/Backend/rust_cocochat/src/main.rs

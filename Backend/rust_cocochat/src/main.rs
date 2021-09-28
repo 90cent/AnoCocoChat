@@ -1,22 +1,19 @@
-mod log;
+mod helper;
 
-use std::{net::{TcpListener,TcpStream},io::*};
-use log::*;
+use std::{net::{TcpListener,TcpStream},io::*,time::*};
+use helper::*;
+
 
 fn main() {
     println!("Hello, world!");
     println!("Build was Successfull");
 
-    let server = start_server().unwrap();
-
+    let server = start_server();
+    
 }
 
-fn start_server() -> Result<TcpListener> {
+fn start_server() -> TcpListener {
     let listner = TcpListener::bind("0.0.0.0:6778");
-
-    let test = Log {
-        message: stringify!("test").to_string(),
-    };
-    test.print();
-    return listner;
+    
+    return listner.unwrap();
 }
