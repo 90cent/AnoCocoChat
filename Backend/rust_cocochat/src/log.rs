@@ -6,4 +6,5 @@ impl Log {
     pub fn print(&self) {
         println!("{}",self.message);
     }
+    
 }
