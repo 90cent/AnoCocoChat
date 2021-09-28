@@ -6,14 +6,14 @@ EndToEnd Anonymus chatting app. With Rust Backend and Android support. +Webapp
 
 Roadmap:
 
-1 - Backend. (Routed trought tor)  
-2. Webapp  
-3. Windows Application  
-4. Android App  
+1 - Backend. (Routed trought tor)  -- Not so true
+2. Webapp  -- I need more developers cuz the current ones cannot code js well
+3. Windows Application  -- When i finished the backend
+4. Android App  -- I rly need some kotlin bois
 5. IOS Optimized Webapp ( :( apple doesn't like windows users, thats why an webapp :( )  
 
 
-How it should work:
+How it SHOULD work:    (the app may not look like this. Btw this is my first big project and i dont have much experience in cryptography )
 
 In this "App" nobody is requiered to use a Username or Email.  
 Its like a Crypto Wallet, a random 26 word key gets generated and hashed and then sent to a database, the hash (that name key) will be saved in a database with a random SHA256.  
@@ -22,7 +22,7 @@ The SHA256 will be called (UserID).
 
 But who wants an 256 character long ID to identify people.
 
-Thats where the "AnoNumber" comes in place, this is a 7 digit number like a username but not tied to one. And every 6 Hours the numbers will be increased by one.
+Thats where the "AnoNumber" comes in place, this is a 7 digit number like a username but not tied to one. And every 6 Hours the numbers will be increased by one. To make tracing harder.
 
 
 Here is an Example:
