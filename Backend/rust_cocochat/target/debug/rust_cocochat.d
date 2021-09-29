@@ -1,1 +1,1 @@
-/home/gegake/coding/CocoChat/Backend/rust_cocochat/target/debug/rust_cocochat: /home/gegake/coding/CocoChat/Backend/rust_cocochat/src/log/helper.rs /home/gegake/coding/CocoChat/Backend/rust_cocochat/src/log.rs /home/gegake/coding/CocoChat/Backend/rust_cocochat/src/main.rs
+/home/gegake/coding/CocoChat/Backend/rust_cocochat/target/debug/rust_cocochat: /home/gegake/coding/CocoChat/Backend/rust_cocochat/src/helper.rs /home/gegake/coding/CocoChat/Backend/rust_cocochat/src/log.rs /home/gegake/coding/CocoChat/Backend/rust_cocochat/src/main.rs
