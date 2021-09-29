@@ -16,7 +16,7 @@ fn main() {
     for client_stream in server.incoming() {
         match client_stream {
             Ok(stream) => {
-                connected_clients += &1;
+                connected_clients += &1 * &4;
                 let client_handle = thread::spawn(move || {
                     log(format!("{:#?}.Client Connected",&connected_clients));
                     chat_client(stream);
