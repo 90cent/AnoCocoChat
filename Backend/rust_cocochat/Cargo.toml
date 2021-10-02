@@ -10,3 +10,4 @@ repository = "https://github.com/GEGAKE/CocoChat"
 [dependencies]
 chrono = "*"
 local_ipaddress = "*"
+json = "*"

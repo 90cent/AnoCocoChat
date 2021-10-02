@@ -24,7 +24,7 @@ fn main() {
                 // Create Client Handle in seperate Threads
                 let handle = match client_handle.join() {
                     Ok(hndl) => log(String::from("Ok")),
-                    Err(_) => log(String::from("Handle error")),
+                    Err(_) => elog(String::from("Handle error")),
                 };
             },
             Err(e) => { log(String::from("error")); }
@@ -33,14 +33,21 @@ fn main() {
 }
 
 fn chat_client(mut client_stream: TcpStream) {
-    let mut data: Vec<u8> = vec![0 as u8; 50];
+    let mut data: Vec<u8> = vec![0 as u8; 2048];
 
-    let size1 = client_stream.read_to_end(&mut data).unwrap();
+    let size1 = match client_stream.read_to_end(&mut data) {
+        Ok(_) => {
+            let packet = helper::NewPacket(&mut data); 
+        },
+        Err(e) => elog(e.to_string()),
+    }
     //let size2 = client_stream.read_to_string(packet_string).unwrap();  
-    let packet = helper::NewPacket(&mut data);
+
     
     log(format!("Packet: Byte:{:#?} String:{}",size1,"--"));
 }
+
+
 
 fn start_server() -> TcpListener {
     let ip_address = &format!("{}:6778",local_ipaddress::get().unwrap().as_str());
