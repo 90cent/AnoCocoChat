@@ -1,4 +1,4 @@
-# CocoChat
+# CocoChat (Is no longer maintained and shouldnt be maintained because i am making [3x100project](https://github.com/GEGAKE/3x100Project))
 EndToEnd Anonymus chatting app. With Rust Backend and Android support. +Webapp
 
 [![Rust](https://github.com/GEGAKE/CocoChat/actions/workflows/rust.yml/badge.svg)](https://github.com/GEGAKE/CocoChat/actions/workflows/rust.yml)
